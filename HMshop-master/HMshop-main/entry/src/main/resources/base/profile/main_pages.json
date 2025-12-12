@@ -1,0 +1,27 @@
+{
+  "src": [
+    "pages/HomePage",
+    "pages/CategoryPage",
+    "pages/LoginPage",
+    "pages/RegisterPage",
+    "pages/ForgetPage",
+    "pages/DetailPage",
+    "pages/CheckoutPage",
+    "pages/SubmitPage",
+    "pages/SearchPage",
+    "pages/OrderPage",
+    "pages/CouponPage",
+    "pages/BrandListPage",
+    "pages/BrandDetailPage",
+    "pages/GroupBuyPage",
+    "pages/NewArrivalPage",
+    "pages/HotGoodsListPage",
+    "pages/TopicPage",
+    "pages/TopicMorePage",
+    "pages/AddressPage",
+    "pages/NewAddressPage",
+    "pages/CollectPage",
+    "pages/InfoPage",
+    "pages/AiPage"
+  ]
+}

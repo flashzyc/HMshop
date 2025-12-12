@@ -1,0 +1,12 @@
+
+    const ResData = await GetShopCartList();
+    if (ResData.errno != 0) {
+      this.getUIContext().getRouter().pushUrl({ url: "pages/LoginPage" })
+      this.getUIContext().getPromptAction().showToast({ message: ResData.errmsg })
+    } else {
+      this.cartList = ResData.data.cartList;
+      this.cartTotal = ResData.data.cartTotal;
+      this.updateAllCheckedState();
+      this.calculateTotal(); // 🔧 计算总价
+      this.forceUpdate();
+    }

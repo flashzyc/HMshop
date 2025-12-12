@@ -1,0 +1,11 @@
+{
+  // 确保文件可写
+  "files.readonlyInclude": {},
+  
+  // 禁用只读模式
+  "files.readonlyFromPermissions": false,
+  
+  // 确保编辑器处于可写模式
+  "editor.readonly": false
+}
+

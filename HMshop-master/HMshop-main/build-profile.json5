@@ -1,0 +1,55 @@
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\15281\\.ohos\\config\\default_HMshop-main_ePCsd_j65qpVu7E7VhXSZ42d25lckaZhguwALiDH3pE=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001A5D52336A9E434C9E69717AC9D616E523178C8A3032EA2D9DA9A06B3A148CDD053067EC1CC8C9",
+          "profile": "C:\\Users\\15281\\.ohos\\config\\default_HMshop-main_ePCsd_j65qpVu7E7VhXSZ42d25lckaZhguwALiDH3pE=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\15281\\.ohos\\config\\default_HMshop-main_ePCsd_j65qpVu7E7VhXSZ42d25lckaZhguwALiDH3pE=.p12",
+          "storePassword": "0000001ADC29C309619E0D64708C399DF5C12213F1FD6FA3BA58E81B105F8E387087AE9E89F43A45BBE3"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

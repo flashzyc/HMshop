@@ -1,0 +1,39 @@
+server:
+  port: 5344
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+spring:
+  config:
+    import: optional:classpath:application-secret.yml
+  datasource:
+    # 使用内存库避免文件锁，启动时 data.sql 会自动导入
+    url: jdbc:h2:mem:hmshop;MODE=MySQL;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+      encoding: UTF-8
+
+logging:
+  level:
+    com.hmshop.backend: INFO
+
+deepseek:
+  api:
+    key: ${DEEPSEEK_API_KEY}
+    url: https://api.deepseek.com/chat/completions
