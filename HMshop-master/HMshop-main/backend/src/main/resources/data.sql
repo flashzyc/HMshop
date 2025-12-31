@@ -6,7 +6,7 @@ INSERT INTO shop_user (id, username, password, nickname, avatar, mobile, gender,
 VALUES (1, 'bupt2023', '2023bupt', 'IG-theshy', 'http://hmapp.net/static/img/avatar.png', '18015006975', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 INSERT INTO user_address (id, user_id, name, tel, country, province, city, county, area_code, postal_code, address_detail, is_default, add_time, update_time, deleted)
-VALUES (10, 1, '周希泰', '15247066805', '中国', '北京市', '北京市', '昌平区', '440305', '518000', '雁北学生公寓', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, FALSE);
+VALUES (10, 1, '哈基米', '1114514114514', '中国', '北京市', '北京市', '昌平区', '440305', '518000', '雁北学生公寓', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, FALSE);
 
 -- 顶级分类
 INSERT INTO category (id, name, keywords, description, pid, icon_url, pic_url, level, sort_order, add_time, update_time, deleted)
